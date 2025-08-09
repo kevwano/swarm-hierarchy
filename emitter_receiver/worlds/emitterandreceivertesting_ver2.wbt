@@ -1,0 +1,91 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.40563267281506593 0.7039922805450426 -0.5829725582545849 1.5590853990279077
+  position -0.4068543337076923 1.2876010505079116 2.8108439921286275
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 0.6 0.6
+  floorTileSize 1 1
+  floorAppearance NULL
+}
+DEF robot_1 E-puck {
+  hidden position_0_0 53.46593334926001
+  hidden position_0_1 207.62290475243228
+  hidden linearVelocity_0 -0.015819699866845983 0.012442643894940649 1.0741311545340688e-06
+  hidden angularVelocity_0 -0.005526445629515945 -0.007100038863654925 -0.00029709096112116786
+  hidden rotation_1 0 1 0 3.200450891823321
+  hidden linearVelocity_1 -0.01585130952151739 0.012488618514782208 -7.437916870411996e-07
+  hidden angularVelocity_1 -0.6244884925674927 -0.7925215925483521 -0.0005174882811892878
+  hidden rotation_2 0 -1 0 6.005395691673663
+  hidden linearVelocity_2 -0.01587212719222433 0.012462218551453443 -1.681851239565543e-06
+  hidden angularVelocity_2 -0.6230533392848573 -0.7936502159447014 0.0003214243585127098
+  translation -0.23006758158210844 0.016641933323523025 -6.437495748604256e-05
+  rotation 0.0006052575965698114 -0.00020357158577421442 0.9999997961109048 2.4751775495082504
+  controller "robot1"
+  receiver_channel 0
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
+DEF robot_2 E-puck {
+  hidden position_0_0 -8.458099428758569
+  hidden position_0_1 236.72203352466408
+  hidden rotation_1 0 1 0 4.1082711856006044
+  hidden rotation_2 0 -1 0 2.039008148160202
+  translation 0.00149146 -0.0620466 -6.87509e-05
+  rotation -0.0006803267656089965 -0.0005650897871683796 0.9999996089144357 -1.4909745013680675
+  name "e-puck(1)"
+  controller "robot1"
+  emitter_channel 0
+  receiver_channel 0
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
+DEF robot_2 E-puck {
+  hidden position_0_0 -115.76699481450459
+  hidden position_0_1 267.2975367900243
+  hidden rotation_1 0 -1 0 2.6696592852720284
+  hidden rotation_2 0 1 0 3.403753888481678
+  translation 0.139635 0.137871 -0.000121454
+  rotation -1.4302265861801731e-07 1.6068698177525443e-08 -0.9999999999999897 -2.666278491548496
+  name "e-puck(2)"
+  controller "robot1"
+  emitter_channel 0
+  receiver_channel 0
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
+Transform {
+  translation 0 0 -0.0499
+  scale 2.5 2.5 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 0.2
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
