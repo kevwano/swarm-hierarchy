@@ -8,3 +8,5 @@ Apologies for the abysmal file naming and any difficulty finding the right proje
 Contact for assistance kevwu68@gmail.com
 
 You may find more test results in the console logs than there are in the paper, that's because I ran out of time on the submission deadline to analyse them.
+
+The script "parser.py" is used for generating graphs from the console logs, courtesy of chatgpt. You will need to separate them out by test runs and then add the file names in the script.
